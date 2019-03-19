@@ -1,0 +1,14 @@
+<section>
+  <img class="panel-img" src="{{ data.imageUrl }}" alt="{{ data.imageAlt }}" />
+  <article>
+    <h2>{{ data.name }}</h2>
+    <p>{{ data.description }}</p>
+  </article>
+  <app-rating class="rating" [rating-value]="data.rating" [numOfReviews]="data.numOfReviews">
+  </app-rating>
+  <div class="tags">
+    <span *ngFor="let tags of data.tags">
+      <h3 class="tag">{{ tags }}</h3>
+    </span>
+  </div>
+</section>

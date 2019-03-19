@@ -1,0 +1,11 @@
+@import '../../style/variables';
+
+.rating-icon,
+.rating-icon-empty {
+  font-size: 2.4rem;
+  padding: 0 0.5rem;
+}
+
+.rating-icon-empty {
+  color: #b0bbbf;
+}

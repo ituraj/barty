@@ -1,0 +1,25 @@
+<fa-icon
+  [icon]="faGlassMartini"
+  [class.rating-icon-empty]="rating < 1"
+  [class.rating-icon]="rating >= 1"
+  (click)="onClick(1)"
+>
+</fa-icon>
+<fa-icon
+  [icon]="faGlassMartini"
+  [class.rating-icon-empty]="rating < 2"
+  [class.rating-icon]="rating >= 2"
+  (click)="onClick(2)"
+>
+</fa-icon>
+<fa-icon
+  [icon]="faGlassMartini"
+  [class.rating-icon-empty]="rating < 3"
+  [class.rating-icon]="rating >= 3"
+  (click)="onClick(3)"
+>
+</fa-icon>
+
+<!-- <fa-icon [icon]="falDollarSign"></fa-icon> -->
+
+<!-- <p>{{ numberOfReviews }}</p> -->

@@ -1,0 +1,359 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>barty documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">barty documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>BarService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/bar.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Service class for BarService</p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getBars">getBars</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBars"></a>
+                    <span class="name">
+                        <b>
+                            getBars
+                        </b>
+                        <a href="#getBars"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBars()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="12"
+                            class="link-to-prism">src/app/bar.service.ts:12</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>getBars method of return type will be called by Cards Component</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>the array of data</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class BarService {
+
+  /**
+   * getBars method of return type will be called by Cards Component
+   *
+   * @returns the array of data
+   */
+  getBars() {
+    return [
+      {
+        name: &#x27;Faodail&#x27;,
+        description:
+          &#x27;Classis Scottish gin bar with variety of herby spirits and intriguing cocktails.&#x27;,
+        imageUrl: &#x27;./assets/panel-img.png&#x27;,
+        imageAlt: &#x27;Scottish bar&#x27;,
+        rating: 2.25,
+        numOfReviews: 2,
+        tags: [&#x27;Gin&#x27;, &#x27;Cocktails&#x27;]
+      },
+      {
+        name: &#x27;221B Baker Street&#x27;,
+        description:
+          &#x27;Everything from coffee to heavy spirits. Stay long enough and you may meet Watson here, but most likely Mrs Hudson.&#x27;,
+        imageUrl: &#x27;./assets/panel-img2.png&#x27;,
+        imageAlt: &#x27;Dive bar&#x27;,
+        rating: 3,
+        numOfReviews: 2,
+        tags: [&#x27;Beer&#x27;, &#x27;Spirits&#x27;, &#x27;Shots&#x27;]
+      },
+      {
+        name: &#x27;Gringo Bar&#x27;,
+        description:
+          &#x27;Find some finest Mojitos in this roof top bar and enjoy a little booze and great views.&#x27;,
+        imageUrl: &#x27;./assets/panel-img3.png&#x27;,
+        imageAlt: &#x27;Mojito bar&#x27;,
+        rating: 0.75,
+        numOfReviews: 2,
+        tags: [&#x27;Mojito&#x27;, &#x27;Margarita&#x27;]
+      },
+      {
+        name: &#x27;Mahao&#x27;,
+        description:
+          &#x27;Vibrant tropical bar and live local entertainment everyday at sunset. Try delicious pink beer, brewed with hibiscus to give it a rich pink hue.&#x27;,
+        imageUrl: &#x27;./assets/panel-img4.png&#x27;,
+        imageAlt: &#x27;Hawaian beer bar&#x27;,
+        rating: 2.5,
+        numOfReviews: 2,
+        tags: [&#x27;Beer&#x27;, &#x27;Cocktails&#x27;]
+      },
+      {
+        name: &#x27;Edison Lamp&#x27;,
+        description:
+          &#x27;Everything from coffee to heavy spirits. Stay long enough and you may meet Watson here, but most likely Mrs Hudson.&#x27;,
+        imageUrl: &#x27;./assets/panel-img5.png&#x27;,
+        imageAlt: &#x27;Whiskey bar&#x27;,
+        rating: 1.8,
+        numOfReviews: 2,
+        tags: [&#x27;Whiskey&#x27;, &#x27;Rum&#x27;, &#x27;Spirits&#x27;]
+      },
+      {
+        name: &#x27;Friday Bar&#x27;,
+        description:
+          &#x27;Your happy place after long week at the office. Join us for amazing happy hour options!&#x27;,
+        imageUrl: &#x27;./assets/panel-img6.png&#x27;,
+        imageAlt: &#x27;Friday bar&#x27;,
+        rating: 2.25,
+        numOfReviews: 2,
+        tags: [&#x27;Happy Hour&#x27;, &#x27;Beer&#x27;, &#x27;Cocktails&#x27;]
+      },
+      {
+        name: &#x27;Beer Garden&#x27;,
+        description:
+          &#x27;If you are missing summer nights you can find them all year around in the Beer Garden. Craft beers and chill vibes.&#x27;,
+        imageUrl: &#x27;./assets/panel-img7.png&#x27;,
+        imageAlt: &#x27;Craft beers&#x27;,
+        rating: 3,
+        numOfReviews: 2,
+        tags: [&#x27;Beer&#x27;, &#x27;Craft&#x27;]
+      },
+      {
+        name: &#x27;221B Baker Street&#x27;,
+        description:
+          &#x27;Everything from coffee to heavy spirits. Stay long enough and you may meet Watson here, but most likely Mrs Hudson.&#x27;,
+        imageUrl: &#x27;./assets/panel-img2.png&#x27;,
+        imageAlt: &#x27;Scottish bar&#x27;,
+        rating: 2,
+        numOfReviews: 2,
+        tags: [&#x27;Beer&#x27;, &#x27;Spirits&#x27;, &#x27;Shots&#x27;]
+      },
+      {
+        name: &#x27;Gringo Bar&#x27;,
+        description:
+          &#x27;Find some finest Mojitos in this roof top bar and enjoy a little booze and great views.&#x27;,
+        imageUrl: &#x27;./assets/panel-img3.png&#x27;,
+        imageAlt: &#x27;Scottish bar&#x27;,
+        rating: 3,
+        numOfReviews: 2,
+        tags: [&#x27;Mojito&#x27;, &#x27;Margarita&#x27;]
+      },
+      {
+        name: &#x27;Faodail&#x27;,
+        description:
+          &#x27;Classis Scottish gin bar with variety of herby spirits and intriguing cocktails.&#x27;,
+        imageUrl: &#x27;./assets/panel-img.png&#x27;,
+        imageAlt: &#x27;Scottish bar&#x27;,
+        rating: 3,
+        numOfReviews: 2,
+        tags: [&#x27;Gin&#x27;, &#x27;Cocktails&#x27;]
+      },
+      {
+        name: &#x27;221B Baker Street&#x27;,
+        description:
+          &#x27;Everything from coffee to heavy spirits. Stay long enough and you may meet Watson here, but most likely Mrs Hudson.&#x27;,
+        imageUrl: &#x27;./assets/panel-img2.png&#x27;,
+        imageAlt: &#x27;Scottish bar&#x27;,
+        rating: 2,
+        numOfReviews: 2,
+        tags: [&#x27;Beer&#x27;, &#x27;Spirits&#x27;, &#x27;Shots&#x27;]
+      },
+      {
+        name: &#x27;Gringo Bar&#x27;,
+        description:
+          &#x27;Find some finest Mojitos in this roof top bar and enjoy a little booze and great views.&#x27;,
+        imageUrl: &#x27;./assets/test.png&#x27;,
+        imageAlt: &#x27;Scottish bar&#x27;,
+        rating: 3,
+        numOfReviews: 2,
+        tags: [&#x27;Mojito&#x27;, &#x27;Margarita&#x27;]
+      }
+    ];
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'BarService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

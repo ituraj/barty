@@ -1,0 +1,53 @@
+@import '../../style/variables';
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background-color: $black;
+  color: $light;
+  h1 {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    align-self: start;
+  }
+  ul {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 100vh;
+    background-color: $black;
+    text-align: center;
+    li {
+      margin: 5rem 1rem;
+      list-style: none;
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $light;
+      }
+    }
+  }
+  .menu {
+    grid-column: 2/3;
+    align-self: start;
+    justify-self: end;
+    margin: 2.4rem 2rem 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  nav {
+    height: 100%;
+    text-align: center;
+    ul {
+      li {
+        margin: 5rem 1rem;
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+}
