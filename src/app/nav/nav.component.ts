@@ -14,4 +14,5 @@ export class NavComponent {
   * showMenu object is a type of boolean and will be responsible for opening mobile nav:
   */
   showMenu: boolean = true;
+
 }

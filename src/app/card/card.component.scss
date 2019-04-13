@@ -45,7 +45,8 @@ section {
     margin: 2rem 4rem;
     img {
       grid-area: img;
-      max-width: 25vw;
+      width: 30vw;
+      height: 100%;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
     }
@@ -73,4 +74,13 @@ section {
       }
     }
   }
+}
+
+@media (min-width: 992px) {
+  section {
+    img {
+      width: 20vw;
+      height: 100%;
+    }
+    }
 }

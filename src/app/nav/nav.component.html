@@ -1,11 +1,16 @@
 <nav>
   <h1>Barty</h1>
-  <ul *ngIf="!showMenu">
+  <ul class="menu-sm" *ngIf="!showMenu">
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
     <li><a href="#">Item</a></li>
   </ul>
-  <span class="menu" (click)="showMenu = !showMenu">
+  <ul class="menu-md">
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+  </ul>
+  <span class="menu-icon" (click)="showMenu = !showMenu">
     <img src="../../assets/menu.svg" alt="menu" />
   </span>
 </nav>

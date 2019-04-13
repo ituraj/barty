@@ -1,3 +1,9 @@
-<div *ngFor="let bar of bars">
-  <app-card [data]="bar"></app-card>
+<app-jumbotron></app-jumbotron>
+<div *ngIf="bars.length > 0">
+  <div *ngFor="let bar of bars">
+    <app-card [data]="bar"></app-card>
+  </div>
+</div>
+<div *ngIf="bars.length === 0">
+  <p>No bars to display.</p>
 </div>

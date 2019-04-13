@@ -17,16 +17,23 @@ import { RatingComponent } from './rating/rating.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+// Custom Pipes
+
+import { TruncatePipe } from './truncate.pipe';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
     CardComponent,
     NavComponent,
-    RatingComponent
+    RatingComponent,
+    TruncatePipe,
+    JumbotronComponent
   ],
   imports: [BrowserModule, FormsModule, HttpClientModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

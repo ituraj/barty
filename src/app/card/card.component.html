@@ -2,10 +2,17 @@
   <img class="panel-img" src="{{ data.imageUrl }}" alt="{{ data.imageAlt }}" />
   <article>
     <h2>{{ data.name }}</h2>
-    <p>{{ data.description }}</p>
+    <p>{{ data.description | truncate: "200"}}</p>
+    <p>Visited: {{data.visitedDate | date}}</p>
   </article>
   <app-rating class="rating" [rating-value]="data.rating" [numOfReviews]="data.numOfReviews">
   </app-rating>
+  <!-- <div [ngSwitch]="data.rating">
+    <div *ngSwitchCase="1">Fair</div>
+    <div *ngSwitchCase="2">Good</div>
+    <div *ngSwitchCase="3">Excellent</div>
+    <div *ngSwitchDefault>Not Rated</div>
+  </div> -->
   <div class="tags">
     <span *ngFor="let tags of data.tags">
       <h3 class="tag">{{ tags }}</h3>
